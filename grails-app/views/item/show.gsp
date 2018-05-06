@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>item.name</title>
+	    <meta name="layout" content="main"/>
+		<style>
+		    body {
+              font-family: sans-serif;
+            }
+		</style>
 	</head>
 	<body>
 		<g:render template="/templates/item" model="[item: item]" />

@@ -1,0 +1,31 @@
+05-06 10:43:22 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "UPDATE ITEM SET DESCRIPTION='This medically inspired serum combines four powerful active ingredients to achieve a visibly smoother and plumper skin, lifting the skin to reduce the spread of wrinkles:<br>
+<ul>
+  <li>
+Specific biotechnological full effective spectrum of high and low molecular weight hyaluronan (second generation Hyaluronic Acid) with short-term lifting 3D effect, enhancing the penetration of other active ingredients
+  </li>
+  <li>
+Peptide with Botox-like effect targeting all expression lines (upper lip wrinkles, chin, nasal and décolleté folds, crow’s feet, forehead and glabellar frown lines).
+  </li>
+  <li>
+Matrikine-mimetic peptide promoting optimal tissue structure and filling in wrinkles from the inside.
+  </li>
+  <li>
+Adenosine, a naturally occurring nucleoside with collagen synthesis and fibroblast proliferation effect, improving the appearance of wrinkles and preserving youthful skin texture and tone.', 'http://redgoldlondon.com/wp-content/uploads/2016/05/Rose_Perfection_Oil_Serum_BIG.jpg
+  </li>
+</ul>'[*] WHERE ID = 1 "; expected "identifier"; SQL statement:
+update item set description='This medically inspired serum combines four powerful active ingredients to achieve a visibly smoother and plumper skin, lifting the skin to reduce the spread of wrinkles:<br>
+<ul>
+  <li>
+Specific biotechnological full effective spectrum of high and low molecular weight hyaluronan (second generation Hyaluronic Acid) with short-term lifting 3D effect, enhancing the penetration of other active ingredients
+  </li>
+  <li>
+Peptide with Botox-like effect targeting all expression lines (upper lip wrinkles, chin, nasal and décolleté folds, crow’s feet, forehead and glabellar frown lines).
+  </li>
+  <li>
+Matrikine-mimetic peptide promoting optimal tissue structure and filling in wrinkles from the inside.
+  </li>
+  <li>
+Adenosine, a naturally occurring nucleoside with collagen synthesis and fibroblast proliferation effect, improving the appearance of wrinkles and preserving youthful skin texture and tone.', 'http://redgoldlondon.com/wp-content/uploads/2016/05/Rose_Perfection_Oil_Serum_BIG.jpg
+  </li>
+</ul>' where id = 1 [42001-176]

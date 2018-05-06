@@ -92,6 +92,7 @@ grails.hibernate.osiv.readonly = false
 environments {
     development {
         grails.logging.jul.usebridge = true
+        grails.serverURL = "http://10.0.0.188:8080/com-redgold"
     }
     production {
         grails.logging.jul.usebridge = false
