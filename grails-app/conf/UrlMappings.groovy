@@ -9,5 +9,7 @@ class UrlMappings {
 
         "/"(view:"/index")
         "500"(view:'/error')
+
+        "/item/$itemId"(controller:"item", action:"show", method:"GET")
 	}
 }

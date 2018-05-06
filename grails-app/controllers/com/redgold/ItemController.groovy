@@ -1,0 +1,9 @@
+package com.redgold
+
+class ItemController {
+
+    def show() {
+        Item item = Item.get(params.itemId)
+        render "${item.name}"
+    }
+}

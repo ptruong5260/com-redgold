@@ -52,7 +52,6 @@ grails.project.dependency.resolution = {
         // runtime 'org.postgresql:postgresql:9.3-1100-jdbc41'
         test "org.grails:grails-datastore-test-support:1.0-grails-2.3"
         runtime 'mysql:mysql-connector-java:5.1.29', {export=false}
-
     }
 
     plugins {
@@ -81,5 +80,7 @@ grails.project.dependency.resolution = {
         //compile ":less-asset-pipeline:1.5.3"
         //compile ":coffee-asset-pipeline:1.5.0"
         //compile ":handlebars-asset-pipeline:1.3.0.1"
+
+        compile "org.grails.plugins:twitter-bootstrap:3.3.4"
     }
 }
