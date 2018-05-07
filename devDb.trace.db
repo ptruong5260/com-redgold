@@ -616,3 +616,75 @@ now(), now()
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at java.lang.Thread.run(Thread.java:748)
+05-07 02:22:48 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "START[*] TRANSACTION "; expected "SELECT, SET, SAVEPOINT, SCRIPT, SHUTDOWN, SHOW, {"; SQL statement:
+start transaction [42001-176]
+05-07 02:23:38 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO ITEM (VERSION, NAME, SHORT_DESCRIPTION, DESCRIPTION, IMAGE, LABEL, DATE_CREATED, LAST_UPDATED) VALUES
+(0, 'Oil Serum Tighten Pores & Even Skin Tone',
+'Generations-old experience fused with a recent Nobel Prize-winning research in the field.',
+'The Nobel prize in Physiology or Medicine 2009 was awarded for discovery of how chromosomes are
+
+ protected by telomeres, and how maintaining telomere length prolongs cell lifespan.
+
+ This oil-serum is a selection of organic oils benefiting pores minimizing and even skin tone: Hemp Seed, Cucumber, Hazelnut, Prickly Pear, Argan, Parsley, Juniper, Basil, Pine, Chamomile, and natural Vitamin E empowered with an active ingredient, which works to repair and preserve the cell DNA to visibly reduce the signs of ageing in just two months. It possesses powerful antioxidant and protecting effects against premature aging of the essential structures of the cell. It revitalizes aged cells, restoring their functions to those of young cells by assuring metabolic and replicative cellular functions at the same level as young cells.
+
+ Known for:
+
+ HEMP SEED OIL – impressive high levels essential fatty acids Omega-6 (50-60%) and Omega-3 (15-20%); reducing pore size, blackheads, skin inflammation and redness; improving water barrier and elasticity of skin; dry feel.
+
+ CUCUMBER OIL – moisturizing; particularly high levels Vitamin B1 and Vitamin C; helping restore skin’s moisture levels; maintaining proper balance; encouraging skin’s regeneration process.
+
+ HAZELNUT OIL – natural astringent properties to help calm over-active oil glands, high content of catechins and tannins (healthy flavonoids); antioxidant protection.
+
+ PRICKLY PEAR SEED OIL – beauty oil excellent for mature, aging or damaged skin to reduce dark circles and blemishes.
+
+ ARGAN OIL – rich in fatty acids and protein.
+
+ PARSLEY ESSENTIAL OIL – preventing dark spots and skin discoloration; erasing under eye dark circles; antibacterial and antifungal properties.
+
+ JUNIPER ESSENTIAL OIL –  tones up the skin; antiseptic properties; treating inflammation, infections, acne, eczema, skin diseases.
+
+ BASIL ESSENTIAL OIL – improving skin tone; treating skin infections.
+
+ PINE ESSENTIAL OIL – treating various skin problems like itching, pimples, skin diseases, poor skin, sores; powerful anti-fungal properties.
+
+ CHAMOMILE ESSENTIAL OIL – diminishing scars, marks and spots on the skin; tones up the skin.',
+'https://lh3.googleusercontent.com/zzroLGykRgDMhSrAcbEt2_U3XwfV72k63VYSM_4DKocScjX4wbTvO-qMUzvm9GPrbfWVS-EVoaDhyKXXg8Tu84c4HcyxYd0Ad92-41OsiVEFiX_nxGrJGpweb1Itcij1SqVX8Qjc9MwWnsXTEwNKA9I5Xy8PCaFF4XoqRnbOX4vZsVdiK7cd8cRDb_BcFX46U0_HZ3sVRYW5cig1K2aSC9630fbvg0kkKnPdgQRFdMDqvHdJgL4ENkOaB2thamQaB6U5tgyTsUI4bzvjCYXjOxmm-Li8txStDZ-hfNuK6g1eeLdEttMXUHISNM91tDfCnCAjvVOVlreVlT3q1fPeSMkShlDEPx5ejkmMsVUdRBwmYEYtZpGXCv4A7_Ggkb8BswjN-y_sSipAQLSR8GUyWmCeAAK6ck7pyjWCxN9vT5hfXnYf9Wo7lQhgUoyrKwRWfURNJODw6mYDA2B7TzDOHFVsTAKdf27SF3C43HQDLYhctYSn9lUH15ASeeCj0UwKNuSVOk38NzwD_7U6kLlGGy22ZaVrcsvrTZVBi-N-bCAwzHO9mrHupicSc_htYsJckKTICLUWJwNcjkgeQ80XwGFE1z7Wn7idMYHWXWI-T6k8bOvnceaCXbIdZc_Ijtr_4lFQBDvHmD_fc5zgbcs4HHQ1Xvn_wcOE=w1000-h554-no',
+'Young Cell'
+NOW[*](), NOW()
+) "; expected "[, ::, *, /, %, +, -, ||, ~, !~, NOT, LIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"; SQL statement:
+Insert into item (version, name, short_description, description, image, label, date_created, last_updated) values
+(0, 'Oil Serum Tighten Pores & Even Skin Tone',
+'Generations-old experience fused with a recent Nobel Prize-winning research in the field.',
+'The Nobel prize in Physiology or Medicine 2009 was awarded for discovery of how chromosomes are
+
+ protected by telomeres, and how maintaining telomere length prolongs cell lifespan.
+
+ This oil-serum is a selection of organic oils benefiting pores minimizing and even skin tone: Hemp Seed, Cucumber, Hazelnut, Prickly Pear, Argan, Parsley, Juniper, Basil, Pine, Chamomile, and natural Vitamin E empowered with an active ingredient, which works to repair and preserve the cell DNA to visibly reduce the signs of ageing in just two months. It possesses powerful antioxidant and protecting effects against premature aging of the essential structures of the cell. It revitalizes aged cells, restoring their functions to those of young cells by assuring metabolic and replicative cellular functions at the same level as young cells.
+
+ Known for:
+
+ HEMP SEED OIL – impressive high levels essential fatty acids Omega-6 (50-60%) and Omega-3 (15-20%); reducing pore size, blackheads, skin inflammation and redness; improving water barrier and elasticity of skin; dry feel.
+
+ CUCUMBER OIL – moisturizing; particularly high levels Vitamin B1 and Vitamin C; helping restore skin’s moisture levels; maintaining proper balance; encouraging skin’s regeneration process.
+
+ HAZELNUT OIL – natural astringent properties to help calm over-active oil glands, high content of catechins and tannins (healthy flavonoids); antioxidant protection.
+
+ PRICKLY PEAR SEED OIL – beauty oil excellent for mature, aging or damaged skin to reduce dark circles and blemishes.
+
+ ARGAN OIL – rich in fatty acids and protein.
+
+ PARSLEY ESSENTIAL OIL – preventing dark spots and skin discoloration; erasing under eye dark circles; antibacterial and antifungal properties.
+
+ JUNIPER ESSENTIAL OIL –  tones up the skin; antiseptic properties; treating inflammation, infections, acne, eczema, skin diseases.
+
+ BASIL ESSENTIAL OIL – improving skin tone; treating skin infections.
+
+ PINE ESSENTIAL OIL – treating various skin problems like itching, pimples, skin diseases, poor skin, sores; powerful anti-fungal properties.
+
+ CHAMOMILE ESSENTIAL OIL – diminishing scars, marks and spots on the skin; tones up the skin.',
+'https://lh3.googleusercontent.com/zzroLGykRgDMhSrAcbEt2_U3XwfV72k63VYSM_4DKocScjX4wbTvO-qMUzvm9GPrbfWVS-EVoaDhyKXXg8Tu84c4HcyxYd0Ad92-41OsiVEFiX_nxGrJGpweb1Itcij1SqVX8Qjc9MwWnsXTEwNKA9I5Xy8PCaFF4XoqRnbOX4vZsVdiK7cd8cRDb_BcFX46U0_HZ3sVRYW5cig1K2aSC9630fbvg0kkKnPdgQRFdMDqvHdJgL4ENkOaB2thamQaB6U5tgyTsUI4bzvjCYXjOxmm-Li8txStDZ-hfNuK6g1eeLdEttMXUHISNM91tDfCnCAjvVOVlreVlT3q1fPeSMkShlDEPx5ejkmMsVUdRBwmYEYtZpGXCv4A7_Ggkb8BswjN-y_sSipAQLSR8GUyWmCeAAK6ck7pyjWCxN9vT5hfXnYf9Wo7lQhgUoyrKwRWfURNJODw6mYDA2B7TzDOHFVsTAKdf27SF3C43HQDLYhctYSn9lUH15ASeeCj0UwKNuSVOk38NzwD_7U6kLlGGy22ZaVrcsvrTZVBi-N-bCAwzHO9mrHupicSc_htYsJckKTICLUWJwNcjkgeQ80XwGFE1z7Wn7idMYHWXWI-T6k8bOvnceaCXbIdZc_Ijtr_4lFQBDvHmD_fc5zgbcs4HHQ1Xvn_wcOE=w1000-h554-no',
+'Young Cell'
+now(), now()
+) [42001-176]

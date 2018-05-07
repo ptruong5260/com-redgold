@@ -29,7 +29,7 @@
             }
 
             .collection-item-row{
-                margin: 10px;
+                margin: 10px 0;
             }
         </style>
 	</head>
