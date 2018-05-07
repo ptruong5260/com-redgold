@@ -8,6 +8,6 @@
     }
 </style>
 
-<h4>${item.name}</h4>
+<h3>${item.name}</h3>
 <div class="horizontal-separator"></div>
 <p>${item.shortDescription}</p>

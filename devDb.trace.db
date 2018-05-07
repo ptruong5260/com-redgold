@@ -29,3 +29,368 @@ Matrikine-mimetic peptide promoting optimal tissue structure and filling in wrin
 Adenosine, a naturally occurring nucleoside with collagen synthesis and fibroblast proliferation effect, improving the appearance of wrinkles and preserving youthful skin texture and tone.', 'http://redgoldlondon.com/wp-content/uploads/2016/05/Rose_Perfection_Oil_Serum_BIG.jpg
   </li>
 </ul>' where id = 1 [42001-176]
+05-06 21:44:40 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE COLLECTION(
+	ID BIGINT(20) AUTO_INCREMENT PRIMARY_KEY[*],
+	NAME VARCHAR(100) NOT NULL,
+	IDENTIFIER VARCHAR(100) NOT NULL,
+	IMAGE LONGTEXT NULL DEFAULT NULL,
+	UNIQUE KEY (IDENTIFIER)
+) "; expected "(, NOT, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+Create table collection(
+	id bigint(20) auto_increment primary_key,
+	name varchar(100) not null,
+	identifier varchar(100) not null,
+	image longtext null default null,
+	unique key (identifier)
+) [42001-176]
+05-06 21:44:58 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE COLLECTION(
+	ID BIGINT(20) NOT NULL AUTO_INCREMENT PRIMARY_KEY[*],
+	NAME VARCHAR(100) NOT NULL,
+	IDENTIFIER VARCHAR(100) NOT NULL,
+	IMAGE LONGTEXT NULL DEFAULT NULL,
+	UNIQUE KEY (IDENTIFIER)
+) "; expected "(, NOT, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+Create table collection(
+	id bigint(20) not null auto_increment primary_key,
+	name varchar(100) not null,
+	identifier varchar(100) not null,
+	image longtext null default null,
+	unique key (identifier)
+) [42001-176]
+05-06 21:45:22 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE COLLECTION(
+	ID BIGINT(20) NOT NULL AUTO_INCREMENT PRIMARY_KEY[*],
+	NAME VARCHAR(100) NOT NULL,
+	IDENTIFIER VARCHAR(100) NOT NULL,
+	IMAGE LONGTEXT NULL DEFAULT NULL,
+	UNIQUE KEY (IDENTIFIER)
+) "; expected "(, NOT, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+Create table collection(
+	id bigint(20) not null auto_increment primary_key,
+	name varchar(100) not null,
+	identifier varchar(100) not null,
+	image longtext null default null,
+	unique key (identifier)
+) [42001-176]
+05-06 21:46:54 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE COLLECTION(
+	ID BIGINT(20) AUTO_INCREMENT PRIMARY_KEY[*],
+	VERSION BIGINT(20) NOT NULL,
+	NAME VARCHAR(100) NOT NULL,
+	IDENTIFIER VARCHAR(100) NOT NULL,
+	IMAGE LONGTEXT NULL DEFAULT NULL,
+	UNIQUE KEY (IDENTIFIER)
+) "; expected "(, NOT, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+Create table collection(
+	id bigint(20) auto_increment primary_key,
+	version bigint(20) not null,
+	name varchar(100) not null,
+	identifier varchar(100) not null,
+	image longtext null default null,
+	unique key (identifier)
+) [42001-176]
+05-06 21:47:27 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE COLLECTION(
+	ID BIGINT(20) NOT NULL AUTO_INCREMENT PRIMARY_KEY[*],
+	VERSION BIGINT(20) NOT NULL,
+	NAME VARCHAR(100) NOT NULL,
+	IDENTIFIER VARCHAR(100) NOT NULL,
+	IMAGE LONGTEXT NULL DEFAULT NULL,
+	UNIQUE KEY (IDENTIFIER)
+) "; expected "(, NOT, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+Create table collection(
+	id bigint(20) not null auto_increment primary_key,
+	version bigint(20) not null,
+	name varchar(100) not null,
+	identifier varchar(100) not null,
+	image longtext null default null,
+	unique key (identifier)
+) [42001-176]
+05-06 21:48:53 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE COLLECTION(
+	ID BIGINT(20) NOT NULL AUTO_INCREMENT PRIMARY_KEY[*],
+	VERSION BIGINT(20) NOT NULL,
+	NAME VARCHAR(100) NOT NULL,
+	IDENTIFIER VARCHAR(100) NOT NULL,
+	IMAGE LONGTEXT NULL DEFAULT NULL,
+	UNIQUE KEY ‘IDENTIFIER’ (IDENTIFIER)
+) "; expected "(, NOT, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+Create table collection(
+	id bigint(20) not null auto_increment primary_key,
+	version bigint(20) not null,
+	name varchar(100) not null,
+	identifier varchar(100) not null,
+	image longtext null default null,
+	unique key ‘identifier’ (identifier)
+) [42001-176]
+05-06 21:49:26 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE COLLECTION(
+	ID BIGINT(20) NOT NULL AUTO_INCREMENT PRIMARY_KEY[*],
+	VERSION BIGINT(20) NOT NULL,
+	NAME VARCHAR(100) NOT NULL,
+	IDENTIFIER VARCHAR(100) NOT NULL,
+	IMAGE LONGTEXT NULL DEFAULT NULL,
+	UNIQUE KEY ‘IDENTIFIER’ (IDENTIFIER)
+) "; expected "(, NOT, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+Create table collection(
+	id bigint(20) not null auto_increment primary_key,
+	version bigint(20) not null,
+	name varchar(100) not null,
+	identifier varchar(100) not null,
+	image longtext null default null,
+	unique key ‘identifier’ (identifier)
+) [42001-176]
+05-06 21:49:28 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE COLLECTION(
+	ID BIGINT(20) NOT NULL AUTO_INCREMENT PRIMARY_KEY[*],
+	VERSION BIGINT(20) NOT NULL,
+	NAME VARCHAR(100) NOT NULL,
+	IDENTIFIER VARCHAR(100) NOT NULL,
+	IMAGE LONGTEXT NULL DEFAULT NULL,
+	UNIQUE KEY ‘IDENTIFIER’ (IDENTIFIER)
+) "; expected "(, NOT, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+Create table collection(
+	id bigint(20) not null auto_increment primary_key,
+	version bigint(20) not null,
+	name varchar(100) not null,
+	identifier varchar(100) not null,
+	image longtext null default null,
+	unique key ‘identifier’ (identifier)
+) [42001-176]
+05-06 21:49:43 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE COLLECTION(
+	ID BIGINT(20) NOT NULL AUTO_INCREMENT PRIMARY_KEY[*],
+	VERSION BIGINT(20) NOT NULL,
+	NAME VARCHAR(100) NOT NULL,
+	IDENTIFIER VARCHAR(100) NOT NULL,
+	IMAGE LONGTEXT NULL DEFAULT NULL,
+	UNIQUE KEY ‘IDENTIFIER’ (IDENTIFIER)
+) "; expected "(, NOT, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+create table collection(
+	id bigint(20) not null auto_increment primary_key,
+	version bigint(20) not null,
+	name varchar(100) not null,
+	identifier varchar(100) not null,
+	image longtext null default null,
+	unique key ‘identifier’ (identifier)
+) [42001-176]
+05-06 21:49:47 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE COLLECTION(
+	ID BIGINT(20) NOT NULL AUTO_INCREMENT PRIMARY_KEY[*],
+	VERSION BIGINT(20) NOT NULL,
+	NAME VARCHAR(100) NOT NULL,
+	IDENTIFIER VARCHAR(100) NOT NULL,
+	IMAGE LONGTEXT NULL DEFAULT NULL,
+	UNIQUE KEY ‘IDENTIFIER’ (IDENTIFIER)
+) "; expected "(, NOT, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+create table collection(
+	id bigint(20) not null auto_increment primary_key,
+	version bigint(20) not null,
+	name varchar(100) not null,
+	identifier varchar(100) not null,
+	image longtext null default null,
+	unique key ‘identifier’ (identifier)
+) [42001-176]
+05-06 21:50:38 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE COLLECTION(
+	ID BIGINT(20) NOT NULL AUTO_INCREMENT PRIMARY_KEY[*],
+	VERSION BIGINT(20) NOT NULL,
+	NAME VARCHAR(100) NOT NULL,
+	IDENTIFIER VARCHAR(100) NOT NULL,
+	IMAGE LONGTEXT NULL DEFAULT NULL,
+	UNIQUE KEY ‘IDENTIFIER’ (IDENTIFIER)
+) "; expected "(, NOT, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+create table collection(
+	id bigint(20) not null auto_increment primary_key,
+	version bigint(20) not null,
+	name varchar(100) not null,
+	identifier varchar(100) not null,
+	image longtext null default null,
+	unique key ‘identifier’ (identifier)
+) [42001-176]
+05-06 21:53:07 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE COLLECTION(
+	ID BIGINT(20) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	VERSION BIGINT(20) NOT NULL,
+	NAME VARCHAR(100) NOT NULL,
+	IDENTIFIER VARCHAR(100) NOT NULL,
+	IMAGE LONGTEXT NULL DEFAULT NULL,
+	UNIQUE KEY[*] ‘IDENTIFIER’ (IDENTIFIER)
+) "; SQL statement:
+Create table collection(
+	id bigint(20) not null auto_increment primary key,
+	version bigint(20) not null,
+	name varchar(100) not null,
+	identifier varchar(100) not null,
+	image longtext null default null,
+	unique key ‘identifier’ (identifier)
+) [42000-176]
+05-06 21:53:38 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE COLLECTION(
+	ID BIGINT(20) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	VERSION BIGINT(20) NOT NULL,
+	NAME VARCHAR(100) NOT NULL,
+	IDENTIFIER VARCHAR(100) NOT NULL,
+	IMAGE LONGTEXT NULL DEFAULT NULL,
+	UNIQUE KEY[*] ‘IDENTIFIER’ (IDENTIFIER)
+) "; SQL statement:
+Create table collection(
+	id bigint(20) not null auto_increment primary key,
+	version bigint(20) not null,
+	name varchar(100) not null,
+	identifier varchar(100) not null,
+	image longtext null default null,
+	unique key ‘identifier’ (identifier)
+) [42000-176]
+05-06 21:55:05 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE COLLECTION(
+	ID BIGINT(20) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	VERSION BIGINT(20) NOT NULL,
+	NAME VARCHAR(100) NOT NULL,
+	IDENTIFIER VARCHAR(100) NOT NULL,
+	IMAGE LONGTEXT NULL DEFAULT NULL,
+	UNIQUE[*] ‘IDENTIFIER’ (IDENTIFIER)
+) "; SQL statement:
+Create table collection(
+	id bigint(20) not null auto_increment primary key,
+	version bigint(20) not null,
+	name varchar(100) not null,
+	identifier varchar(100) not null,
+	image longtext null default null,
+	unique ‘identifier’ (identifier)
+) [42000-176]
+05-06 21:56:12 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE FEATURE_COLLECTION(
+	ID BIGINT(20) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	VERSION BIGINT(20) NOT NULL,
+	IMAGE_BANNER LONGTEXT NULL DEFAULT NULL,
+	DESCRIPTION LONGTEXT NULL DEFAULT NULL,
+	IMAGE_TITLE LONGTEXT NULL DEFAULT NULL,
+	COLLECTION_ID BIGINT(20) NOT NULL,
+	FOREIGN KEY[*] ‘COLLECTION_ID’ REFERENCES COLLECTION(‘ID’)
+) "; SQL statement:
+create table feature_collection(
+	id bigint(20) not null auto_increment primary key,
+	version bigint(20) not null,
+	image_banner longtext null default null,
+	description longtext null default null,
+	image_title longtext null default null,
+	collection_id bigint(20) not null,
+	foreign key ‘collection_id’ references collection(‘id’)
+) [42000-176]
+05-06 21:57:06 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE FEATURE_COLLECTION(
+	ID BIGINT(20) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	VERSION BIGINT(20) NOT NULL,
+	IMAGE_BANNER LONGTEXT NULL DEFAULT NULL,
+	DESCRIPTION LONGTEXT NULL DEFAULT NULL,
+	IMAGE_TITLE LONGTEXT NULL DEFAULT NULL,
+	COLLECTION_ID BIGINT(20) NOT NULL,
+	FOREIGN KEY COLLECTION_ID[*] REFERENCES COLLECTION(ID)
+) "; expected "("; SQL statement:
+create table feature_collection(
+	id bigint(20) not null auto_increment primary key,
+	version bigint(20) not null,
+	image_banner longtext null default null,
+	description longtext null default null,
+	image_title longtext null default null,
+	collection_id bigint(20) not null,
+	foreign key collection_id references collection(id)
+) [42001-176]
+05-06 21:58:16 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE FEATURE_COLLECTION(
+	ID BIGINT(20) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	VERSION BIGINT(20) NOT NULL,
+	IMAGE_BANNER LONGTEXT NULL DEFAULT NULL,
+	DESCRIPTION LONGTEXT NULL DEFAULT NULL,
+	IMAGE_TITLE LONGTEXT NULL DEFAULT NULL,
+	COLLECTION_ID BIGINT(20) NOT NULL,
+	FOREIGN KEY COLLECTION_ID[*] REFERENCES COLLECTION(ID)
+) "; expected "("; SQL statement:
+create table feature_collection(
+	id bigint(20) not null auto_increment primary key,
+	version bigint(20) not null,
+	image_banner longtext null default null,
+	description longtext null default null,
+	image_title longtext null default null,
+	collection_id bigint(20) not null,
+	foreign key collection_id REFERENCES collection(id)
+) [42001-176]
+05-06 21:59:24 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE FEATURE_COLLECTION(
+	ID BIGINT(20) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	VERSION BIGINT(20) NOT NULL,
+	IMAGE_BANNER LONGTEXT NULL DEFAULT NULL,
+	DESCRIPTION LONGTEXT NULL DEFAULT NULL,
+	IMAGE_TITLE LONGTEXT NULL DEFAULT NULL,
+	COLLECTION_ID BIGINT(20) NOT NULL,
+	FOREIGN KEY COLLECTION_ID[*] REFERENCES COLLECTION(ID)
+) "; expected "("; SQL statement:
+create table feature_collection(
+	id bigint(20) not null auto_increment primary key,
+	version bigint(20) not null,
+	image_banner longtext null default null,
+	description longtext null default null,
+	image_title longtext null default null,
+	collection_id bigint(20) not null,
+	FOREIGN KEY collection_id REFERENCES collection(id)
+) [42001-176]
+05-06 21:59:26 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE FEATURE_COLLECTION(
+	ID BIGINT(20) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	VERSION BIGINT(20) NOT NULL,
+	IMAGE_BANNER LONGTEXT NULL DEFAULT NULL,
+	DESCRIPTION LONGTEXT NULL DEFAULT NULL,
+	IMAGE_TITLE LONGTEXT NULL DEFAULT NULL,
+	COLLECTION_ID BIGINT(20) NOT NULL,
+	FOREIGN KEY COLLECTION_ID[*] REFERENCES COLLECTION(ID)
+) "; expected "("; SQL statement:
+create table feature_collection(
+	id bigint(20) not null auto_increment primary key,
+	version bigint(20) not null,
+	image_banner longtext null default null,
+	description longtext null default null,
+	image_title longtext null default null,
+	collection_id bigint(20) not null,
+	FOREIGN KEY collection_id REFERENCES collection(id)
+) [42001-176]
+05-06 22:01:01 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE FEATURE_COLLECTION(
+	ID BIGINT(20) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	VERSION BIGINT(20) NOT NULL,
+	IMAGE_BANNER LONGTEXT NULL DEFAULT NULL,
+	DESCRIPTION LONGTEXT NULL DEFAULT NULL,
+	IMAGE_TITLE LONGTEXT NULL DEFAULT NULL,
+	COLLECTION_ID BIGINT(20) NOT NULL,
+	FOREIGN KEY COLLECTION_ID[*] REFERENCES COLLECTION(ID)
+) "; expected "("; SQL statement:
+create table feature_collection(
+	id bigint(20) not null auto_increment primary key,
+	version bigint(20) not null,
+	image_banner longtext null default null,
+	description longtext null default null,
+	image_title longtext null default null,
+	collection_id bigint(20) not null,
+	FOREIGN KEY collection_id REFERENCES collection(id)
+) [42001-176]
+05-06 22:03:03 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE FEATURE_COLLECTION(
+	ID BIGINT(20) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	VERSION BIGINT(20) NOT NULL,
+	IMAGE_BANNER LONGTEXT NULL DEFAULT NULL,
+	DESCRIPTION LONGTEXT NULL DEFAULT NULL,
+	IMAGE_TITLE LONGTEXT NULL DEFAULT NULL,
+	COLLECTION_ID BIGINT(20) NOT NULL,
+	FOREIGN KEY COLLECTION_ID[*] REFERENCES PUBLIC.COLLECTION(ID)
+) "; expected "("; SQL statement:
+create table feature_collection(
+	id bigint(20) not null auto_increment primary key,
+	version bigint(20) not null,
+	image_banner longtext null default null,
+	description longtext null default null,
+	image_title longtext null default null,
+	collection_id bigint(20) not null,
+	FOREIGN KEY collection_id REFERENCES public.collection(id)
+) [42001-176]
