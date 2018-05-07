@@ -45,15 +45,17 @@
   </div>
 </div>
 
-<div class="container description-container">
-  <div class="row">
-    <div class="col-sm-12 col-md-12">
-        <ul class="list-inline description-section">
-            <li>Description</li>
-        </ul>
-        <div class="description-holder">
-            <p>${raw(item.description)}</p>
+<g:if test="${item.description}">
+    <div class="container description-container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12">
+            <ul class="list-inline description-section">
+                <li>Description</li>
+            </ul>
+            <div class="description-holder">
+                <p>${raw(item.description)}</p>
+            </div>
         </div>
+      </div>
     </div>
-  </div>
-</div>
+</g:if>

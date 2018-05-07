@@ -7,7 +7,7 @@
         margin: 1em 0;
     }
 </style>
-
+<h2>${item.label}</h2>
 <h3>${item.name}</h3>
 <div class="horizontal-separator"></div>
 <p>${item.shortDescription}</p>

@@ -6,6 +6,7 @@ class Item
     String shortDescription
     String description
     String image
+    String label
     Date dateCreated
     Date lastUpdated
 
@@ -14,6 +15,7 @@ class Item
         shortDescription nullable: false, maxSize: 5000
         image nullable: true, maxSize: 5000
         description nullable: false, maxSize: 5000
+        label nullable: true, maxSize: 20
     }
 
     public ItemPrice getItemPrice()
