@@ -23,7 +23,7 @@
 </style>
 
 <div class="price-container">
-    <span class="price-info">30 ml</span>
+    <span class="price-info">${itemPrice.volumeAmount} ${itemPrice.volumeUnit}</span>
     <span class="price-separator"></span>
-    <span class="price-info">200</span>
+    <span class="price-info">${itemPrice.price}</span>
 </div>

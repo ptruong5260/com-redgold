@@ -15,4 +15,9 @@ class Item
         image nullable: true, maxSize: 5000
         description nullable: false, maxSize: 5000
     }
+
+    public ItemPrice getItemPrice()
+    {
+        return ItemPrice.findByItem( this )
+    }
 }

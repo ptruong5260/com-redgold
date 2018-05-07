@@ -40,7 +40,7 @@
     </div>
     <div class="col-sm-12 col-md-6">
       <g:render template="/templates/itemShortDescription" model="[item: item]"/>
-      <g:render template="/templates/itemPriceInfo"/>
+      <g:render template="/templates/itemPriceInfo" model="[itemPrice: item.getItemPrice()]"/>
     </div>
   </div>
 </div>
