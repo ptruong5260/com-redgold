@@ -536,3 +536,83 @@ Especially good for dull skin with spots.’,
 ‘https://lh3.googleusercontent.com/UAYD21x7sPJKZCix7MX_2jUKy1GjHz3pX3WbP2DtP2GucbVd6X06cSijcGiZBA3S2VS0REQ196mIqoKgE2YpN43Lmqb3Lm9Qn_onKUKc4Dw4I9gRfw8M9SrqKlchGLO48p2MoF-xB5sbSyuKXNeg4xsbbMYfcCQjImF4sjXLLkYWJK_QTFf4kFCAZZXB5fx9gBoDPc0yzQlziyg4vL07LZpSjeN3ebCpSqG483L-2oFssXXNwC0GHpRLmfMe_TtWMlwm0QTT1CuGvg2YF69DnCksX1APrJCUMjHK5fPVdWpF8kfiOPTfYP_YzMszs0EErpuMyQTWGB1gxARJGN-x67X0Y8fnZAzwa3Kw2VXLUxfdps4a-8a2lrvNHfezRuHl0FB67VKQGky4KBDFX25MyKNCLlPKaoS05IT6ApRBFLZS-BROI5nNcsPOSKY_5oLLXjM0-6amRhd-ToSt4jn__3pjksEHN5K76SQE94zdA_tSWgawyrvXz-mQ-bPRqj8AGof7QDvV-9ZYY_q9D7MVQbq8W6Q28KL4SvjZQjXj3-gi1a_WZvjhIA10NPbO8nRR6jV0E6WfpKgl_zI-v7M7Ayma5pMu1TgLZ6SbYC-UUew3EjwjgZD5DK4xuIfFRvOpieL05FTyq5i_ad3ceP3uWfpjwWwo5zg=w683-h173-no',
 Select id from item where name = 'Brightening Day Cream Vivid Glow SPF 50'
 ) [42000-176]
+05-06 23:50:22 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "SELECT "; expected "TOP, LIMIT, DISTINCT, ALL, *, NOT, EXISTS, INTERSECTS"; SQL statement:
+show create table item [42001-176]
+05-06 23:50:36 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ITEM"; expected "INSERT, {"; SQL statement:
+ITEM [42001-176]
+05-06 23:56:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Column count does not match; SQL statement:
+Insert into item (version, name, short_description, description, image, date_created, last_updated) values
+(0, 'Eau de Parfum for Men',
+'An irresistible exciting fragrance for a timeless masculine style.
+ For the gentleman of today.',
+'https://lh3.googleusercontent.com/e-RPL6yTECuPNvHAD0fNuZPV5JlnFXqPGtCNGqDZG5MKvSWrRNrddrYGenccuARVM5MmUHzAKrYgefHz8cnPf5Wl6nZYkAERxFDCQFOtRXEitpP8JnYxo3wBpOR_AHt7FL0tkquWlwm57rFq7xsj0iM8npqnlhF0lLoV-Nny-mVU5GqZi1Veigke02T40ms_8wWVgonNTK9PZ37H0GdK3FAiOphnHhvEFDFaf_6a1p9-0_IDsqWZEuIYl3YUGNlbJ05lrXpWqclPh9_FueazUVYhHrSSLtpoPzfyn25rJRKHrch-ljtE6QJPFPhDonQdpIcMNcsdUykTcPs4xGqmhPpDBGWx5BhDGBdOojHV7zAufyaoO2ZbhI0XtFNXrddyWyvEhhZnjYjuswqC1gSk0Sh-H0284EnP8HaFh2wsgCeoV9JR6eq22iUnJPtYGfJLjXEdtt-qWK-HNK0JhdICDp2ueU620lm3uudyzDPKkHwV9ATFRGsTdIccCWjF93e48jP0BO3TMBYbogsuxNSmufNVXs1mwarVRsQYGaNU1u1LW0P73SjJMRwN4oeNQYkz7_jxMabM9n8rBZUaxpG049ks7oQyV_lDmBLKlYkSxreCzL3YY_u_89A7c7GGJAyP9Yy405-7k0o0CwIJdhN-H0_gfFxJ0VQ=w1000-h554-no',
+now(), now()
+) [21002-176]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:344)
+	at org.h2.message.DbException.get(DbException.java:178)
+	at org.h2.message.DbException.get(DbException.java:154)
+	at org.h2.message.DbException.get(DbException.java:143)
+	at org.h2.command.dml.Insert.prepare(Insert.java:266)
+	at org.h2.command.Parser.prepareCommand(Parser.java:248)
+	at org.h2.engine.Session.prepareLocal(Session.java:442)
+	at org.h2.engine.Session.prepareCommand(Session.java:384)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1188)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:172)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:160)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1391)
+	at org.h2.server.web.WebApp.query(WebApp.java:1064)
+	at org.h2.server.web.WebApp.query(WebApp.java:1040)
+	at org.h2.server.web.WebApp.process(WebApp.java:224)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:171)
+	at org.h2.server.web.WebServlet.doGet(WebServlet.java:126)
+	at org.h2.server.web.WebServlet.doPost(WebServlet.java:163)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:646)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.processFilterChain(UrlMappingsFilter.java:441)
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.doFilterInternal(UrlMappingsFilter.java:242)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:106)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.codehaus.groovy.grails.web.sitemesh.GrailsPageFilter.executeFilterChainWithWrappedResponse(GrailsPageFilter.java:233)
+	at org.codehaus.groovy.grails.web.sitemesh.GrailsPageFilter.obtainContent(GrailsPageFilter.java:208)
+	at org.codehaus.groovy.grails.web.sitemesh.GrailsPageFilter.doFilter(GrailsPageFilter.java:153)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at javax.servlet.FilterChain$doFilter.call(Unknown Source)
+	at org.grails.plugin.resource.DevModeSanityFilter.doFilter(DevModeSanityFilter.groovy:45)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.codehaus.groovy.grails.web.servlet.mvc.GrailsWebRequestFilter.doFilterInternal(GrailsWebRequestFilter.java:69)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:106)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.codehaus.groovy.grails.web.filters.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:67)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:106)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:106)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:343)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:260)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1040)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:313)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:748)

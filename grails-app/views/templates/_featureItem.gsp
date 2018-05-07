@@ -29,21 +29,33 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-sm-12 col-md-6">
-      <g:if test="${featureItem.imageTitle}">
-        <img class="item-image margin-bottom" src="${featureItem.imageTitle}" atl="${featureItem.item.name}">
-      </g:if>
-      <g:if test="${featureItem.description}">
-        <p class="description margin-bottom">${featureItem.description}</p>
-      </g:if>
-    </div>
-    <div class="col-sm-12 col-md-6">
-      <g:if test="${featureItem.imageBanner}">
-        <img class="item-image margin-bottom" src="${featureItem.imageBanner}" atl="${featureItem.item.name}">
-      </g:if>
-      <g:set var="itemLink" value="${createLink(controller:'item', action:'show', params:[itemId: featureItem.item.id])}" />
-      <a href="${itemLink}"
-        class="shop-now-section padding-bottom">SHOP NOW</a>
-    </div>
+  <g:set var="itemLink" value="${createLink(controller:'item', action:'show', params:[itemId: featureItem.item.id])}" />
+
+    <g:if test="${featureItem.imageTitle && featureItem.description && featureItem.imageBanner}">
+        <div class="col-sm-12 col-md-6">
+          <g:if test="${featureItem.imageTitle}">
+            <img class="item-image margin-bottom" src="${featureItem.imageTitle}" atl="${featureItem.item.name}">
+          </g:if>
+          <g:if test="${featureItem.description}">
+            <p class="description margin-bottom">${featureItem.description}</p>
+          </g:if>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <g:if test="${featureItem.imageBanner}">
+            <img class="item-image margin-bottom" src="${featureItem.imageBanner}" atl="${featureItem.item.name}">
+          </g:if>
+          <a href="${itemLink}"
+            class="shop-now-section padding-bottom">SHOP NOW</a>
+        </div>
+    </g:if>
+    <g:else>
+        <div class="col-sm-12 col-md-12">
+          <g:if test="${featureItem.imageBanner}">
+            <img class="item-image margin-bottom" src="${featureItem.imageBanner}" atl="${featureItem.item.name}">
+          </g:if>
+          <a href="${itemLink}"
+              class="shop-now-section padding-bottom">SHOP NOW</a>
+        </div>
+    </g:else>
   </div>
 </div>

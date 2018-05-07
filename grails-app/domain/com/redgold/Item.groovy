@@ -10,7 +10,7 @@ class Item
     Date lastUpdated
 
     static constraints ={
-        name nullable: false, maxSize: 200
+        name nullable: false, maxSize: 200, unique: true
         shortDescription nullable: false, maxSize: 5000
         image nullable: true, maxSize: 5000
         description nullable: false, maxSize: 5000

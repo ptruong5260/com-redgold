@@ -22,7 +22,7 @@
     <g:javascript library="application"/>
     <r:layoutResources/>
 </head>
-<body>
+<body style="max-width: initial;">
     <g:layoutBody/>
     <div class="footer" role="contentinfo" style="background-color: black;">
         <span style="color: white;">Copyright © 2018</span>
