@@ -394,3 +394,145 @@ create table feature_collection(
 	collection_id bigint(20) not null,
 	FOREIGN KEY collection_id REFERENCES public.collection(id)
 ) [42001-176]
+05-06 22:28:35 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLException: Table "FEATURE_ITEM" already exists; SQL statement:
+create table feature_item(
+	id bigint(20) not null auto_increment primary key,
+	version bigint(20) not null,
+	image_banner longtext null default null,
+	description longtext null default null,
+	image_title longtext null default null,
+	item_id bigint(20) not null,
+	FOREIGN KEY (item_id) REFERENCES item(id)
+) [42101-176]
+05-06 22:28:35 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO FEATURE_ITEM (VERSION, IMAGE_BANNER, DESCRIPTION, IMAGE_TITLE, ITEM_ID) VALUES (
+0,[*] ‘HTTPS:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+‘A MARVELOUS FACE CREAM DESIGNED TO PROVIDE GENTLE
+SKIN DEPIGMENTATION, DELICATE NOURISHMENT, AND STRONG PROTECTION.
+HYDRATED AND PROTECTED, THE SKIN REVEALS ITS OWN HEALTHY GLOW.
+ESPECIALLY GOOD FOR DULL SKIN WITH SPOTS.’,
+‘HTTPS:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+(SELECT ID FROM ITEM WHERE NAME = ‘BRIGHTENING DAY CREAM VIVID GLOW SPF 50’)
+) "; SQL statement:
+Insert into feature_item (version, image_banner, description, image_title, item_id) values (
+0, ‘https://lh3.googleusercontent.com/S4kfhx05LNgG7Rijx4hv3_Q_BlPOYfReYK99jIf3SOceZ6hP-dXOnJkhWSNhnohuM0UhMsen_9XSIrDFb_QpTSJ_YZsw7aGaYqSi4uW0cM8vpvLBxSso_COQJdbzOK9YtmekAbSinOxitW6qah366CfgutVDiGYm9QFNqKYsKFeqAM9tv96C_T_64_9xLcY2O1Qr2QbvU89iVURxTa63JXJcK3z05JuqXQRyyWl5-702U3hSf-Dra7D4YX34NKlth8Y71WiNQA9ujIS6isonr26McVXUuDPIcCMTCq1PGIfKOx7LoFIDip5HoCBGtqqCaAYtvVenD0sM90RhurEH1LlBoygKYMVhJzUXWTNDAODJbFaJBiJ6JpgU7hYFsyWZyLQmZgNLQ7bvR3P3KItchxxbUPIeJEotevfzhyf5kMnYYJQqobMyTuo4lkz9eaCF2eekVC23S_1XBzjhn7SAIn1NSlaHM6PHb4U04nTd7Fj4DSHTvH3Bpq7F3MBkJXcKxhkGjTobB6ZwEMyeWdjSbOV68mzsnsceg4P-6FJfq-8lG9GwBMX_AHj99A-odX489Gt3zT-P8_R_kEf90FgOeg7g-Bcab75Zl5FOlhB_eFynZaMfbleeAH7pfF9RvvkiKVLRcZJb_DafGPCZl-TtYH3vPqp1zsQ=w896-h636-no', 
+‘A marvelous face cream designed to provide gentle
+skin depigmentation, delicate nourishment, and strong protection.
+Hydrated and protected, the skin reveals its own healthy glow.
+Especially good for dull skin with spots.’,
+‘https://lh3.googleusercontent.com/UAYD21x7sPJKZCix7MX_2jUKy1GjHz3pX3WbP2DtP2GucbVd6X06cSijcGiZBA3S2VS0REQ196mIqoKgE2YpN43Lmqb3Lm9Qn_onKUKc4Dw4I9gRfw8M9SrqKlchGLO48p2MoF-xB5sbSyuKXNeg4xsbbMYfcCQjImF4sjXLLkYWJK_QTFf4kFCAZZXB5fx9gBoDPc0yzQlziyg4vL07LZpSjeN3ebCpSqG483L-2oFssXXNwC0GHpRLmfMe_TtWMlwm0QTT1CuGvg2YF69DnCksX1APrJCUMjHK5fPVdWpF8kfiOPTfYP_YzMszs0EErpuMyQTWGB1gxARJGN-x67X0Y8fnZAzwa3Kw2VXLUxfdps4a-8a2lrvNHfezRuHl0FB67VKQGky4KBDFX25MyKNCLlPKaoS05IT6ApRBFLZS-BROI5nNcsPOSKY_5oLLXjM0-6amRhd-ToSt4jn__3pjksEHN5K76SQE94zdA_tSWgawyrvXz-mQ-bPRqj8AGof7QDvV-9ZYY_q9D7MVQbq8W6Q28KL4SvjZQjXj3-gi1a_WZvjhIA10NPbO8nRR6jV0E6WfpKgl_zI-v7M7Ayma5pMu1TgLZ6SbYC-UUew3EjwjgZD5DK4xuIfFRvOpieL05FTyq5i_ad3ceP3uWfpjwWwo5zg=w683-h173-no',
+(Select id from item where name = ‘Brightening Day Cream Vivid Glow SPF 50’)
+) [42000-176]
+05-06 22:28:50 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO FEATURE_ITEM (VERSION, IMAGE_BANNER, DESCRIPTION, IMAGE_TITLE, ITEM_ID) VALUES (
+0,[*] ‘HTTPS:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+‘A MARVELOUS FACE CREAM DESIGNED TO PROVIDE GENTLE
+SKIN DEPIGMENTATION, DELICATE NOURISHMENT, AND STRONG PROTECTION.
+HYDRATED AND PROTECTED, THE SKIN REVEALS ITS OWN HEALTHY GLOW.
+ESPECIALLY GOOD FOR DULL SKIN WITH SPOTS.’,
+‘HTTPS:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+(SELECT ID FROM ITEM WHERE NAME = ‘BRIGHTENING DAY CREAM VIVID GLOW SPF 50’)
+) "; SQL statement:
+Insert into feature_item (version, image_banner, description, image_title, item_id) values (
+0, ‘https://lh3.googleusercontent.com/S4kfhx05LNgG7Rijx4hv3_Q_BlPOYfReYK99jIf3SOceZ6hP-dXOnJkhWSNhnohuM0UhMsen_9XSIrDFb_QpTSJ_YZsw7aGaYqSi4uW0cM8vpvLBxSso_COQJdbzOK9YtmekAbSinOxitW6qah366CfgutVDiGYm9QFNqKYsKFeqAM9tv96C_T_64_9xLcY2O1Qr2QbvU89iVURxTa63JXJcK3z05JuqXQRyyWl5-702U3hSf-Dra7D4YX34NKlth8Y71WiNQA9ujIS6isonr26McVXUuDPIcCMTCq1PGIfKOx7LoFIDip5HoCBGtqqCaAYtvVenD0sM90RhurEH1LlBoygKYMVhJzUXWTNDAODJbFaJBiJ6JpgU7hYFsyWZyLQmZgNLQ7bvR3P3KItchxxbUPIeJEotevfzhyf5kMnYYJQqobMyTuo4lkz9eaCF2eekVC23S_1XBzjhn7SAIn1NSlaHM6PHb4U04nTd7Fj4DSHTvH3Bpq7F3MBkJXcKxhkGjTobB6ZwEMyeWdjSbOV68mzsnsceg4P-6FJfq-8lG9GwBMX_AHj99A-odX489Gt3zT-P8_R_kEf90FgOeg7g-Bcab75Zl5FOlhB_eFynZaMfbleeAH7pfF9RvvkiKVLRcZJb_DafGPCZl-TtYH3vPqp1zsQ=w896-h636-no', 
+‘A marvelous face cream designed to provide gentle
+skin depigmentation, delicate nourishment, and strong protection.
+Hydrated and protected, the skin reveals its own healthy glow.
+Especially good for dull skin with spots.’,
+‘https://lh3.googleusercontent.com/UAYD21x7sPJKZCix7MX_2jUKy1GjHz3pX3WbP2DtP2GucbVd6X06cSijcGiZBA3S2VS0REQ196mIqoKgE2YpN43Lmqb3Lm9Qn_onKUKc4Dw4I9gRfw8M9SrqKlchGLO48p2MoF-xB5sbSyuKXNeg4xsbbMYfcCQjImF4sjXLLkYWJK_QTFf4kFCAZZXB5fx9gBoDPc0yzQlziyg4vL07LZpSjeN3ebCpSqG483L-2oFssXXNwC0GHpRLmfMe_TtWMlwm0QTT1CuGvg2YF69DnCksX1APrJCUMjHK5fPVdWpF8kfiOPTfYP_YzMszs0EErpuMyQTWGB1gxARJGN-x67X0Y8fnZAzwa3Kw2VXLUxfdps4a-8a2lrvNHfezRuHl0FB67VKQGky4KBDFX25MyKNCLlPKaoS05IT6ApRBFLZS-BROI5nNcsPOSKY_5oLLXjM0-6amRhd-ToSt4jn__3pjksEHN5K76SQE94zdA_tSWgawyrvXz-mQ-bPRqj8AGof7QDvV-9ZYY_q9D7MVQbq8W6Q28KL4SvjZQjXj3-gi1a_WZvjhIA10NPbO8nRR6jV0E6WfpKgl_zI-v7M7Ayma5pMu1TgLZ6SbYC-UUew3EjwjgZD5DK4xuIfFRvOpieL05FTyq5i_ad3ceP3uWfpjwWwo5zg=w683-h173-no',
+(Select id from item where name = ‘Brightening Day Cream Vivid Glow SPF 50’)
+) [42000-176]
+05-06 22:29:19 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO FEATURE_ITEM (VERSION, IMAGE_BANNER, DESCRIPTION, IMAGE_TITLE, ITEM_ID) VALUES (
+0,[*] ‘HTTPS:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+‘A MARVELOUS FACE CREAM DESIGNED TO PROVIDE GENTLE
+SKIN DEPIGMENTATION, DELICATE NOURISHMENT, AND STRONG PROTECTION.
+HYDRATED AND PROTECTED, THE SKIN REVEALS ITS OWN HEALTHY GLOW.
+ESPECIALLY GOOD FOR DULL SKIN WITH SPOTS.’,
+‘HTTPS:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+(SELECT ID FROM ITEM WHERE NAME = ‘BRIGHTENING DAY CREAM VIVID GLOW SPF 50’)
+) "; SQL statement:
+Insert into feature_item (version, image_banner, description, image_title, item_id) values (
+0, ‘https://lh3.googleusercontent.com/S4kfhx05LNgG7Rijx4hv3_Q_BlPOYfReYK99jIf3SOceZ6hP-dXOnJkhWSNhnohuM0UhMsen_9XSIrDFb_QpTSJ_YZsw7aGaYqSi4uW0cM8vpvLBxSso_COQJdbzOK9YtmekAbSinOxitW6qah366CfgutVDiGYm9QFNqKYsKFeqAM9tv96C_T_64_9xLcY2O1Qr2QbvU89iVURxTa63JXJcK3z05JuqXQRyyWl5-702U3hSf-Dra7D4YX34NKlth8Y71WiNQA9ujIS6isonr26McVXUuDPIcCMTCq1PGIfKOx7LoFIDip5HoCBGtqqCaAYtvVenD0sM90RhurEH1LlBoygKYMVhJzUXWTNDAODJbFaJBiJ6JpgU7hYFsyWZyLQmZgNLQ7bvR3P3KItchxxbUPIeJEotevfzhyf5kMnYYJQqobMyTuo4lkz9eaCF2eekVC23S_1XBzjhn7SAIn1NSlaHM6PHb4U04nTd7Fj4DSHTvH3Bpq7F3MBkJXcKxhkGjTobB6ZwEMyeWdjSbOV68mzsnsceg4P-6FJfq-8lG9GwBMX_AHj99A-odX489Gt3zT-P8_R_kEf90FgOeg7g-Bcab75Zl5FOlhB_eFynZaMfbleeAH7pfF9RvvkiKVLRcZJb_DafGPCZl-TtYH3vPqp1zsQ=w896-h636-no', 
+‘A marvelous face cream designed to provide gentle
+skin depigmentation, delicate nourishment, and strong protection.
+Hydrated and protected, the skin reveals its own healthy glow.
+Especially good for dull skin with spots.’,
+‘https://lh3.googleusercontent.com/UAYD21x7sPJKZCix7MX_2jUKy1GjHz3pX3WbP2DtP2GucbVd6X06cSijcGiZBA3S2VS0REQ196mIqoKgE2YpN43Lmqb3Lm9Qn_onKUKc4Dw4I9gRfw8M9SrqKlchGLO48p2MoF-xB5sbSyuKXNeg4xsbbMYfcCQjImF4sjXLLkYWJK_QTFf4kFCAZZXB5fx9gBoDPc0yzQlziyg4vL07LZpSjeN3ebCpSqG483L-2oFssXXNwC0GHpRLmfMe_TtWMlwm0QTT1CuGvg2YF69DnCksX1APrJCUMjHK5fPVdWpF8kfiOPTfYP_YzMszs0EErpuMyQTWGB1gxARJGN-x67X0Y8fnZAzwa3Kw2VXLUxfdps4a-8a2lrvNHfezRuHl0FB67VKQGky4KBDFX25MyKNCLlPKaoS05IT6ApRBFLZS-BROI5nNcsPOSKY_5oLLXjM0-6amRhd-ToSt4jn__3pjksEHN5K76SQE94zdA_tSWgawyrvXz-mQ-bPRqj8AGof7QDvV-9ZYY_q9D7MVQbq8W6Q28KL4SvjZQjXj3-gi1a_WZvjhIA10NPbO8nRR6jV0E6WfpKgl_zI-v7M7Ayma5pMu1TgLZ6SbYC-UUew3EjwjgZD5DK4xuIfFRvOpieL05FTyq5i_ad3ceP3uWfpjwWwo5zg=w683-h173-no',
+(Select id from item where name = ‘Brightening Day Cream Vivid Glow SPF 50’)
+) [42000-176]
+05-06 22:30:21 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "SELECT ID FROM ITEM WHERE NAME =[*] ‘BRIGHTENING DAY CREAM VIVID GLOW SPF 50’ "; SQL statement:
+Select id from item where name = ‘Brightening Day Cream Vivid Glow SPF 50’ [42000-176]
+05-06 22:32:35 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "SELECT ID FROM ITEM WHERE NAME=[*]‘BRIGHTENING DAY CREAM VIVID GLOW SPF 50’ "; SQL statement:
+Select id from item where name=‘Brightening Day Cream Vivid Glow SPF 50’ [42000-176]
+05-06 22:34:30 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLException: Table "FEATURE_ITEM" already exists; SQL statement:
+create table feature_item(
+	id bigint(20) not null auto_increment primary key,
+	version bigint(20) not null,
+	image_banner longtext null default null,
+	description longtext null default null,
+	image_title longtext null default null,
+	item_id bigint(20) not null,
+	FOREIGN KEY (item_id) REFERENCES item(id)
+) [42101-176]
+05-06 22:34:30 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO FEATURE_ITEM (VERSION, IMAGE_BANNER, DESCRIPTION, IMAGE_TITLE, ITEM_ID) VALUES (
+0,[*] ‘HTTPS:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+‘A MARVELOUS FACE CREAM DESIGNED TO PROVIDE GENTLE
+SKIN DEPIGMENTATION, DELICATE NOURISHMENT, AND STRONG PROTECTION.
+HYDRATED AND PROTECTED, THE SKIN REVEALS ITS OWN HEALTHY GLOW.
+ESPECIALLY GOOD FOR DULL SKIN WITH SPOTS.’,
+‘HTTPS:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+(SELECT ID FROM ITEM WHERE NAME = 'Brightening Day Cream Vivid Glow SPF 50')
+) "; SQL statement:
+Insert into feature_item (version, image_banner, description, image_title, item_id) values (
+0, ‘https://lh3.googleusercontent.com/S4kfhx05LNgG7Rijx4hv3_Q_BlPOYfReYK99jIf3SOceZ6hP-dXOnJkhWSNhnohuM0UhMsen_9XSIrDFb_QpTSJ_YZsw7aGaYqSi4uW0cM8vpvLBxSso_COQJdbzOK9YtmekAbSinOxitW6qah366CfgutVDiGYm9QFNqKYsKFeqAM9tv96C_T_64_9xLcY2O1Qr2QbvU89iVURxTa63JXJcK3z05JuqXQRyyWl5-702U3hSf-Dra7D4YX34NKlth8Y71WiNQA9ujIS6isonr26McVXUuDPIcCMTCq1PGIfKOx7LoFIDip5HoCBGtqqCaAYtvVenD0sM90RhurEH1LlBoygKYMVhJzUXWTNDAODJbFaJBiJ6JpgU7hYFsyWZyLQmZgNLQ7bvR3P3KItchxxbUPIeJEotevfzhyf5kMnYYJQqobMyTuo4lkz9eaCF2eekVC23S_1XBzjhn7SAIn1NSlaHM6PHb4U04nTd7Fj4DSHTvH3Bpq7F3MBkJXcKxhkGjTobB6ZwEMyeWdjSbOV68mzsnsceg4P-6FJfq-8lG9GwBMX_AHj99A-odX489Gt3zT-P8_R_kEf90FgOeg7g-Bcab75Zl5FOlhB_eFynZaMfbleeAH7pfF9RvvkiKVLRcZJb_DafGPCZl-TtYH3vPqp1zsQ=w896-h636-no', 
+‘A marvelous face cream designed to provide gentle
+skin depigmentation, delicate nourishment, and strong protection.
+Hydrated and protected, the skin reveals its own healthy glow.
+Especially good for dull skin with spots.’,
+‘https://lh3.googleusercontent.com/UAYD21x7sPJKZCix7MX_2jUKy1GjHz3pX3WbP2DtP2GucbVd6X06cSijcGiZBA3S2VS0REQ196mIqoKgE2YpN43Lmqb3Lm9Qn_onKUKc4Dw4I9gRfw8M9SrqKlchGLO48p2MoF-xB5sbSyuKXNeg4xsbbMYfcCQjImF4sjXLLkYWJK_QTFf4kFCAZZXB5fx9gBoDPc0yzQlziyg4vL07LZpSjeN3ebCpSqG483L-2oFssXXNwC0GHpRLmfMe_TtWMlwm0QTT1CuGvg2YF69DnCksX1APrJCUMjHK5fPVdWpF8kfiOPTfYP_YzMszs0EErpuMyQTWGB1gxARJGN-x67X0Y8fnZAzwa3Kw2VXLUxfdps4a-8a2lrvNHfezRuHl0FB67VKQGky4KBDFX25MyKNCLlPKaoS05IT6ApRBFLZS-BROI5nNcsPOSKY_5oLLXjM0-6amRhd-ToSt4jn__3pjksEHN5K76SQE94zdA_tSWgawyrvXz-mQ-bPRqj8AGof7QDvV-9ZYY_q9D7MVQbq8W6Q28KL4SvjZQjXj3-gi1a_WZvjhIA10NPbO8nRR6jV0E6WfpKgl_zI-v7M7Ayma5pMu1TgLZ6SbYC-UUew3EjwjgZD5DK4xuIfFRvOpieL05FTyq5i_ad3ceP3uWfpjwWwo5zg=w683-h173-no',
+(Select id from item where name = 'Brightening Day Cream Vivid Glow SPF 50')
+) [42000-176]
+05-06 22:35:13 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO FEATURE_ITEM (VERSION, IMAGE_BANNER, DESCRIPTION, IMAGE_TITLE, ITEM_ID) VALUES (
+0,[*] ‘HTTPS:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+‘A MARVELOUS FACE CREAM DESIGNED TO PROVIDE GENTLE
+SKIN DEPIGMENTATION, DELICATE NOURISHMENT, AND STRONG PROTECTION.
+HYDRATED AND PROTECTED, THE SKIN REVEALS ITS OWN HEALTHY GLOW.
+ESPECIALLY GOOD FOR DULL SKIN WITH SPOTS.’,
+‘HTTPS:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+(SELECT ID FROM ITEM WHERE NAME = 'Brightening Day Cream Vivid Glow SPF 50')
+) "; SQL statement:
+Insert into feature_item (version, image_banner, description, image_title, item_id) values (
+0, ‘https://lh3.googleusercontent.com/S4kfhx05LNgG7Rijx4hv3_Q_BlPOYfReYK99jIf3SOceZ6hP-dXOnJkhWSNhnohuM0UhMsen_9XSIrDFb_QpTSJ_YZsw7aGaYqSi4uW0cM8vpvLBxSso_COQJdbzOK9YtmekAbSinOxitW6qah366CfgutVDiGYm9QFNqKYsKFeqAM9tv96C_T_64_9xLcY2O1Qr2QbvU89iVURxTa63JXJcK3z05JuqXQRyyWl5-702U3hSf-Dra7D4YX34NKlth8Y71WiNQA9ujIS6isonr26McVXUuDPIcCMTCq1PGIfKOx7LoFIDip5HoCBGtqqCaAYtvVenD0sM90RhurEH1LlBoygKYMVhJzUXWTNDAODJbFaJBiJ6JpgU7hYFsyWZyLQmZgNLQ7bvR3P3KItchxxbUPIeJEotevfzhyf5kMnYYJQqobMyTuo4lkz9eaCF2eekVC23S_1XBzjhn7SAIn1NSlaHM6PHb4U04nTd7Fj4DSHTvH3Bpq7F3MBkJXcKxhkGjTobB6ZwEMyeWdjSbOV68mzsnsceg4P-6FJfq-8lG9GwBMX_AHj99A-odX489Gt3zT-P8_R_kEf90FgOeg7g-Bcab75Zl5FOlhB_eFynZaMfbleeAH7pfF9RvvkiKVLRcZJb_DafGPCZl-TtYH3vPqp1zsQ=w896-h636-no', 
+‘A marvelous face cream designed to provide gentle
+skin depigmentation, delicate nourishment, and strong protection.
+Hydrated and protected, the skin reveals its own healthy glow.
+Especially good for dull skin with spots.’,
+‘https://lh3.googleusercontent.com/UAYD21x7sPJKZCix7MX_2jUKy1GjHz3pX3WbP2DtP2GucbVd6X06cSijcGiZBA3S2VS0REQ196mIqoKgE2YpN43Lmqb3Lm9Qn_onKUKc4Dw4I9gRfw8M9SrqKlchGLO48p2MoF-xB5sbSyuKXNeg4xsbbMYfcCQjImF4sjXLLkYWJK_QTFf4kFCAZZXB5fx9gBoDPc0yzQlziyg4vL07LZpSjeN3ebCpSqG483L-2oFssXXNwC0GHpRLmfMe_TtWMlwm0QTT1CuGvg2YF69DnCksX1APrJCUMjHK5fPVdWpF8kfiOPTfYP_YzMszs0EErpuMyQTWGB1gxARJGN-x67X0Y8fnZAzwa3Kw2VXLUxfdps4a-8a2lrvNHfezRuHl0FB67VKQGky4KBDFX25MyKNCLlPKaoS05IT6ApRBFLZS-BROI5nNcsPOSKY_5oLLXjM0-6amRhd-ToSt4jn__3pjksEHN5K76SQE94zdA_tSWgawyrvXz-mQ-bPRqj8AGof7QDvV-9ZYY_q9D7MVQbq8W6Q28KL4SvjZQjXj3-gi1a_WZvjhIA10NPbO8nRR6jV0E6WfpKgl_zI-v7M7Ayma5pMu1TgLZ6SbYC-UUew3EjwjgZD5DK4xuIfFRvOpieL05FTyq5i_ad3ceP3uWfpjwWwo5zg=w683-h173-no',
+(Select id from item where name = 'Brightening Day Cream Vivid Glow SPF 50')
+) [42000-176]
+05-06 22:36:05 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO FEATURE_ITEM (VERSION, IMAGE_BANNER, DESCRIPTION, IMAGE_TITLE, ITEM_ID) VALUES (
+0,[*] ‘HTTPS:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+‘A MARVELOUS FACE CREAM DESIGNED TO PROVIDE GENTLE
+SKIN DEPIGMENTATION, DELICATE NOURISHMENT, AND STRONG PROTECTION.
+HYDRATED AND PROTECTED, THE SKIN REVEALS ITS OWN HEALTHY GLOW.
+ESPECIALLY GOOD FOR DULL SKIN WITH SPOTS.’,
+‘HTTPS:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+SELECT ID FROM ITEM WHERE NAME = 'Brightening Day Cream Vivid Glow SPF 50'
+) "; SQL statement:
+Insert into feature_item (version, image_banner, description, image_title, item_id) values (
+0, ‘https://lh3.googleusercontent.com/S4kfhx05LNgG7Rijx4hv3_Q_BlPOYfReYK99jIf3SOceZ6hP-dXOnJkhWSNhnohuM0UhMsen_9XSIrDFb_QpTSJ_YZsw7aGaYqSi4uW0cM8vpvLBxSso_COQJdbzOK9YtmekAbSinOxitW6qah366CfgutVDiGYm9QFNqKYsKFeqAM9tv96C_T_64_9xLcY2O1Qr2QbvU89iVURxTa63JXJcK3z05JuqXQRyyWl5-702U3hSf-Dra7D4YX34NKlth8Y71WiNQA9ujIS6isonr26McVXUuDPIcCMTCq1PGIfKOx7LoFIDip5HoCBGtqqCaAYtvVenD0sM90RhurEH1LlBoygKYMVhJzUXWTNDAODJbFaJBiJ6JpgU7hYFsyWZyLQmZgNLQ7bvR3P3KItchxxbUPIeJEotevfzhyf5kMnYYJQqobMyTuo4lkz9eaCF2eekVC23S_1XBzjhn7SAIn1NSlaHM6PHb4U04nTd7Fj4DSHTvH3Bpq7F3MBkJXcKxhkGjTobB6ZwEMyeWdjSbOV68mzsnsceg4P-6FJfq-8lG9GwBMX_AHj99A-odX489Gt3zT-P8_R_kEf90FgOeg7g-Bcab75Zl5FOlhB_eFynZaMfbleeAH7pfF9RvvkiKVLRcZJb_DafGPCZl-TtYH3vPqp1zsQ=w896-h636-no', 
+‘A marvelous face cream designed to provide gentle
+skin depigmentation, delicate nourishment, and strong protection.
+Hydrated and protected, the skin reveals its own healthy glow.
+Especially good for dull skin with spots.’,
+‘https://lh3.googleusercontent.com/UAYD21x7sPJKZCix7MX_2jUKy1GjHz3pX3WbP2DtP2GucbVd6X06cSijcGiZBA3S2VS0REQ196mIqoKgE2YpN43Lmqb3Lm9Qn_onKUKc4Dw4I9gRfw8M9SrqKlchGLO48p2MoF-xB5sbSyuKXNeg4xsbbMYfcCQjImF4sjXLLkYWJK_QTFf4kFCAZZXB5fx9gBoDPc0yzQlziyg4vL07LZpSjeN3ebCpSqG483L-2oFssXXNwC0GHpRLmfMe_TtWMlwm0QTT1CuGvg2YF69DnCksX1APrJCUMjHK5fPVdWpF8kfiOPTfYP_YzMszs0EErpuMyQTWGB1gxARJGN-x67X0Y8fnZAzwa3Kw2VXLUxfdps4a-8a2lrvNHfezRuHl0FB67VKQGky4KBDFX25MyKNCLlPKaoS05IT6ApRBFLZS-BROI5nNcsPOSKY_5oLLXjM0-6amRhd-ToSt4jn__3pjksEHN5K76SQE94zdA_tSWgawyrvXz-mQ-bPRqj8AGof7QDvV-9ZYY_q9D7MVQbq8W6Q28KL4SvjZQjXj3-gi1a_WZvjhIA10NPbO8nRR6jV0E6WfpKgl_zI-v7M7Ayma5pMu1TgLZ6SbYC-UUew3EjwjgZD5DK4xuIfFRvOpieL05FTyq5i_ad3ceP3uWfpjwWwo5zg=w683-h173-no',
+Select id from item where name = 'Brightening Day Cream Vivid Glow SPF 50'
+) [42000-176]
