@@ -44,16 +44,18 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
+    <g:set var="collectionSer" bean="collectionService" />
+    <g:set var="collectionMenus" value="${collectionSer.getCollectionByMenuType()}" />
+
     <div class="collapse navbar-collapse navbar-collapse-custom" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SKINCARE</a>
-          <g:render template="/templates/dropdownMenu" model="[]"/>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Fragrance</a>
-          <g:render template="/templates/dropdownMenu" model="[]"/>
-        </li>
+        <g:each var="collectionMenu" in="${collectionMenus}">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">${collectionMenu.name}</a>
+                <g:set var="subCollectionMeuList" value="${collectionMenu.getChildCollectionList()}" />
+                <g:render template="/templates/dropdownMenu" model="[subCollectionMeuList: subCollectionMeuList]"/>
+            </li>
+        </g:each>
         <li><a href="#" class="menu">About Red Gold</a></li>
         <li><a href="#" class="menu">Contact Us</a></li>
       </ul>

@@ -21,27 +21,16 @@
 </style>
 
 <ul class="dropdown-menu dropdown-menu-custom">
-    <li><a href="#">COLLECTIONS</a>
-        <ul class="dropdown-menu-item">
-            <li>
-                <a>Infinity</a>
-                <a>Snow Porcelain</a>
-            </li>
-        </ul>
-    </li>
-    <li><a href="#">BY CATEGORY</a>
-        <ul class="dropdown-menu-item">
-            <li>
-                <a>Cleansers & Toners</a>
-                <a>Creams</a>
-            </li>
-        </ul>
-    </li>
-    <li><a href="#">BY CONCERN</a>
-        <ul class="dropdown-menu-item">
-            <li>
-                <a>Visible Signs of Ageing</a>
-            </li>
-        </ul>
-    </li>
+    <g:each var="subCollectionMenu" in="${subCollectionMeuList}">
+        <li><a href="#">${subCollectionMenu.name}</a>
+            <ul class="dropdown-menu-item">
+                <g:set var="childCollectionList" value="${subCollectionMenu.getChildCollectionList()}" />
+                <li>
+                    <g:each var="childCollection" in="${childCollectionList}">
+                        <a>${childCollection.name}</a>
+                    </g:each>
+                </li>
+            </ul>
+        </li>
+    </g:each>
 </ul>

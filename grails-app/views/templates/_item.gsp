@@ -3,18 +3,7 @@
         margin-bottom: 30px;
     }
 
-    .item-image{
-        width: 100%;
-        -ms-flex-align: center;
-        align-items: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        display: -ms-inline-flexbox;
-        display: inline-flex;
-        margin: 0 auto;
-        height: 100%;
-        object-fit: cover;
-    }
+
 
     .description-container{
         padding-left: 18px;
@@ -34,9 +23,7 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-12 col-md-6">
-      <g:if test="${item.image}">
-        <img class="item-image" src="${item.image}" atl="${item.name}">
-      </g:if>
+        <g:render template="/templates/itemImage" model="[item: item]"/>
     </div>
     <div class="col-sm-12 col-md-6">
       <g:render template="/templates/itemShortDescription" model="[item: item]"/>
