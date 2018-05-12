@@ -7,9 +7,10 @@ class UrlMappings {
             }
         }
 
-        "/"(view:"/index")
+//        "/"(view:"/index")
+        "/"(controller:"home", action:"index")
         "500"(view:'/error')
-
+        "/aboutUs"(view:'/aboutUs')
         "/collection/$collectionId"(controller:"collection", action:"show")
         "/item/$itemId"(controller:"item", action:"show", method:"GET")
 

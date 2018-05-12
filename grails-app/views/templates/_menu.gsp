@@ -57,7 +57,7 @@
             </li>
         </g:each>
         <li><a href="#" class="menu">About Red Gold</a></li>
-        <li><a href="#" class="menu">Contact Us</a></li>
+        <li><a href="" class="menu">Contact Us</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

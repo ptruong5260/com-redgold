@@ -27,7 +27,8 @@
                 <g:set var="childCollectionList" value="${subCollectionMenu.getChildCollectionList()}" />
                 <li>
                     <g:each var="childCollection" in="${childCollectionList}">
-                        <a>${childCollection.name}</a>
+                        <g:set var="collectionLink" value="${createLink(controller:'collection', action:'show', params:[collectionId: childCollection.id])}"/>
+                        <a href="${collectionLink}">${childCollection.name}</a>
                     </g:each>
                 </li>
             </ul>

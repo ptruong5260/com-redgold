@@ -3,8 +3,6 @@
         margin-bottom: 30px;
     }
 
-
-
     .description-container{
         padding-left: 18px;
     }
