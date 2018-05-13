@@ -17,16 +17,16 @@ hibernate {
 environments {
     development {
         dataSource {
-            dbCreate = "update" // one of 'create', 'create-drop', 'update', 'validate', ''
+//            dbCreate = "update" // one of 'create', 'create-drop', 'update', 'validate', ''
 //            url = "jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE"
             // not clear memory
-            url = "jdbc:h2:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE"
-//            driverClassName = "com.mysql.jdbc.Driver"
-//            dbCreate = "validate"
-//            url = "jdbc:mysql://localhost:3306/redgold"
-//            username = "root"
-//            password = "12345678"
-//            logSql = false
+//            url = "jdbc:h2:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE"
+            driverClassName = "com.mysql.jdbc.Driver"
+            dbCreate = "validate"
+            url = "jdbc:mysql://localhost:3306/redgold"
+            username = "root"
+            password = "12345678"
+            logSql = false
 //            properties
 //                    {
 //                        maxActive = -1
@@ -49,7 +49,9 @@ environments {
     production {
         dataSource {
             dbCreate = "update"
-            url = "jdbc:h2:prodDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE"
+//            url = "jdbc:h2:prodDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE"
+            username = "redgoldprod"
+            password = "T4l4th13nh4v0d01prod"
             properties {
                // See http://grails.org/doc/latest/guide/conf.html#dataSource for documentation
                jmxEnabled = true
